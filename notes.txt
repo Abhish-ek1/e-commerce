@@ -1,0 +1,9 @@
+Remember for costom middleware 
+write under kernal protected middleware and add StartSession class as well
+
+        \Illuminate\Session\Middleware\StartSession::class,
+
+as we are going to use Sessions
+add your costom middleware class as well
+
+Name middleware and use the name in routes

@@ -14,10 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
+// Route::get('/', function () {
+//     return view('login');
+// });
 
-Route::get('register', [UserController::class, 'register_open']);
+Route::get('login', [UserController::class, 'login'])->middleware('loggedin');
+Route::get('register', [UserController::class, 'register']);
 Route::get('save-user', [UserController::class, 'save_user']);
 Route::get('login-user', [UserController::class, 'login_user']);
+
+Route::get('test', [UserController::class, 'test'])->middleware('check');
