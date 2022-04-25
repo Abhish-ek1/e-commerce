@@ -17,8 +17,8 @@ class Check
     public function handle(Request $request, Closure $next)
     {
         if ($request->session()->missing('user')) {
-            return redirect('/login');
-        } 
+            return redirect('login');
+        }
         return $next($request);
     }
 }

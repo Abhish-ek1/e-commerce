@@ -7,3 +7,5 @@ as we are going to use Sessions
 add your costom middleware class as well
 
 Name middleware and use the name in routes
+
+to create multiple entries use insert instead of create in seeder

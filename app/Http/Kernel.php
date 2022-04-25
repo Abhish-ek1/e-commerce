@@ -22,8 +22,8 @@ class Kernel extends HttpKernel
         \Illuminate\Session\Middleware\StartSession::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
-        \App\Http\Middleware\Check::class,
-        \App\Http\Middleware\AlreadyLoggedIn::class,
+        // \App\Http\Middleware\Check::class,
+        // \App\Http\Middleware\AlreadyLoggedIn::class,
 
 
     ];

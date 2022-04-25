@@ -17,7 +17,7 @@ class AlreadyLoggedIn
     public function handle(Request $request, Closure $next)
     {
         if ($request->session()->has('user')) {
-            return redirect("/");
+            return redirect('home');
         }
         return $next($request);
     }
